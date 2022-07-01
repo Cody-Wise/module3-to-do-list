@@ -3,7 +3,7 @@ const setup = require('../data/setup');
 const request = require('supertest');
 const app = require('../lib/app');
 const UserService = require('../lib/services/UserService');
-const ToDo = require('../lib/models/ToDo');
+const ToDo = require('../lib/models/Todo');
 
 const testUser1 = {
   email: 'test@test.com',
