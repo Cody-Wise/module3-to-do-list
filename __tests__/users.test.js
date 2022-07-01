@@ -23,7 +23,7 @@ describe('backend-express-template routes', () => {
     const res = await request(app).post('/api/v1/users').send(mockUser);
 
     expect(res.body).toEqual({
-      id: expect.any(String),
+      id: expect.any(Number),
       email: 'test@example.com',
     });
   });
