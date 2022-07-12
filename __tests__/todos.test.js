@@ -51,7 +51,7 @@ describe('todos routes', () => {
     const res2 = await agent.get('/api/v1/todos/');
 
     expect(res2.status).toEqual(200);
-    expect(res2.body).toEqual(user1ToDo);
+    expect(res2.body).toEqual([user1ToDo]);
     expect(res2.body).not.toContain(user2ToDo);
   });
 
